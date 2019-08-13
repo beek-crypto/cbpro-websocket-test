@@ -10,7 +10,7 @@ const websocket = new CoinbasePro.WebsocketClient(
         secret: process.env.SANDBOX_SECRET,
         passphrase: process.env.SANDBOX_PASSPHRASE
     },
-    { channels: ['hearbeat'] }
+    { channels: ['heartbeat'] }
     );
 
 websocket.on('message', data => {
